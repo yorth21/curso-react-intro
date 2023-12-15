@@ -2,7 +2,12 @@ import './CreateTodoButton.css'
 
 function CreateTodoButton() {
   return (
-    <button className='button__add'>Agregar</button>
+    <button
+      onClick={(event) => console.log(event.target)}
+      className='button__add'
+    >
+      Agregar
+    </button>
   )
 }
 

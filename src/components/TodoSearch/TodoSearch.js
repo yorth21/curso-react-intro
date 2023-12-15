@@ -1,11 +1,16 @@
 import './TodoSearch.css'
 
-function TodoSearch() {
+
+function TodoSearch({ searchValue, setSearchValue }) {
   return (
-    <form className='search__form'>
-      <input className='search__input' placeholder="Cortar cebolla" />
-      <button className='search__button'>🔍</button>
-    </form>
+    <input
+      className='search__input'
+      placeholder='Cortar cebolla'
+      value={searchValue}
+      onChange={(event) => {
+        setSearchValue(event.target.value)
+      }}
+    />
   )
 }
 

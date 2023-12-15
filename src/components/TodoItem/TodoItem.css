@@ -6,26 +6,26 @@
   align-items: center;
 }
 
-.todos__item--finished p {
-  color: #888;
-  text-decoration: line-through;
-}
-
 .check {
   margin-right: 1rem;
   font-weight: bold;
   color: green;
+  cursor: pointer;
 }
 
 .check--disabled {
-  color: #ccc;
-  text-decoration: line-through;
+  color: #888;
 }
 
 .descripcion {
   width: 100%;
   font-size: 1rem;
   margin: 0;
+}
+
+.descripcion--completed {
+  color: #888;
+  text-decoration: line-through;
 }
 
 .button__eliminar {
